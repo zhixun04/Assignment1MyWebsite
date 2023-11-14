@@ -23,6 +23,7 @@
         
                 return false;
             }    
+            return false;
         }
     </script>
 </head>
@@ -46,7 +47,7 @@
         </div>  
 
         <div class="form">
-            <form name="loginForm" onsubmit=" return validateForm();" action = "Home.html" method  = "post">
+            <form name="loginForm" onsubmit=" return validateForm();">
                 <h2>Login Here</h2>
                 <input type="email" id = "email" name="Email" placeholder="Enter your email" >
                 <input type="password" id = "password" name="Password" placeholder="Enter your password" >
@@ -69,13 +70,15 @@
         function func(){
             var email = document.getElementById("email").value;
             var password = document.getElementById("password").value;
-            if (email = 'peyzhixun@gmail.com' && password == '12345'){
+            if (email == 'peyzhixun@gmail.com' && password == '12345')
+            {
                 alert("Success")
                 window.location.assign("Home.html")
             }
-           else{
-            alert("Wrong entry")
-            }
+           else
+           {
+                alert("Wrong entry")
+           }
         }
     </script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
