@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Interior Design</title>
+    <title> Main Interior Design</title>
     <link rel="stylesheet" href="loginpage.css">
     <link rel="icon" href="image/images (1).jpeg">
+    <script>
+        // JavaScript for form validation
+        function validateForm() { 
+            var email = document.forms["loginForm"]["Email"].value;
+            var password = document.forms["loginForm"]["Password"].value;
+
+            if (email === "" && password === "") {
+                alert("Please enter both email and password.");
+                return false;
+            }
+             else if (email === "") 
+            {
+                alert("Please enter your email.");
+                return false;
+            }
+             else if (password === "") 
+            {
+                alert("Please enter your password.");
+                return false;
+            }
+            
+            
+        }
+    </script>
 </head>
 <body>
     <div class="banner">
@@ -19,31 +43,31 @@
 
         <div class="content">
             <h1>Harmony <br><span>Interiors</span></h1>
-            <p class = "para">At Harmony Interiors, we believe that every login is a step closer to realizing your dream space.<br> Just as our designs seamlessly blend style and functionality, your login brings you one step closer to<br> experiencing the exquisite world of interior design. <br>Welcome to a place where your vision and our expertise harmonize to create spaces that reflect <br> your unique personality and aspirations.<br> We're here to make your interior design journey as seamless and inspiring as our designs themselves.<br> Let's begin this journey together and transform your space into a work of art.</p>
+            <p class="para">At Harmony Interiors, we believe that every login is a step closer to realizing your dream space.<br> Just as our designs seamlessly blend style and functionality, your login brings you one step closer to<br> experiencing the exquisite world of interior design. <br>Welcome to a place where your vision and our expertise harmonize to create spaces that reflect <br> your unique personality and aspirations.<br> We're here to make your interior design journey as seamless and inspiring as our designs themselves.<br> Let's begin this journey together and transform your space into a work of art.</p>
             
-            <button class = "con"><a href = "#">JOIN US</a></button>
+            <button class="con"><a href="#">JOIN US</a></button>
         </div>  
 
-            <div class = "form">
-                
+        <div class="form">
+            <form name="loginForm" onsubmit="return validateForm()" action="Home.html" method="post">
                 <h2>Login Here</h2>
-                <input type = "Email" name = "Email" placeholder="Enter your email" required>
-                <input type = "Password" name = "" placeholder = "Enter your password" required>
-                <button class = "button"><a href = "Home.html">Login</a></button>
-                <p class = "link">Don't have an account<br>
-                <a href = "#">Sign up Here</a></p>
-                <p class = "loginwith">Log in With</p>
-                
-
-                <div class = "icon">
-                    <a href = "https://www.facebook.com/PEYZHIXUN"><ion-icon name = "logo-facebook"></ion-icon></a>
-                    <a href = "https://www.instagram.com/zhixun_pey/"><ion-icon name = "logo-instagram"></ion-icon></a>
-                    <a href = "#"><ion-icon name = "logo-twitter"></ion-icon></a>
-                    <a href = "#"><ion-icon name = "logo-google"></ion-icon></a>
-                    <a href = "#"><ion-icon name = "logo-skype"></ion-icon></a>
+                <input type="email" name="Email" placeholder="Enter your email" >
+                <input type="password" name="Password" placeholder="Enter your password" >
+                <button type="submit" class="button">Login</button>
+                <p class="link">Don't have an account<br>
+                    <a href="#">Sign up Here</a>
+                </p>
+                <p class="loginwith">Log in With</p>
+                <div class="icon">
+                    <a href="https://www.facebook.com/PEYZHIXUN"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/zhixun_pey/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
                 </div>
-        
-            </div>
-    <script src = "https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    </body>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
 </html>
