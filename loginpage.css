@@ -232,16 +232,19 @@
     .content {
         font-size: 14px;
         padding: 5px;
+        width: 100%;
     }
     .form {
-        width: 100%; /* Adjust for full-width mobile form */
-        left: 0; /* Reset position for mobile */
+        width: 65%; /* Adjust for full-width mobile form */
+        left: 20%; /* Reset position for mobile */
     }
     .content h1 {
-        font-size: 40px; /* Adjust heading size for mobile */
+        font-size: 35px; /* Adjust heading size for mobile */
     }
     .navbar {
         padding: 10px; /* Adjust navbar padding for mobile */
+        font-size: 10px;
+        width: 100%;
     }
 }
 
@@ -252,8 +255,8 @@
         padding: 10px; /* Adjust padding for tablets */
     }
     .form {
-        width: 80%; /* Adjust form width for tablets */
-        left: 15%; /* Center the form horizontally for tablets */
+        width: 50%; /* Adjust form width for tablets */
+        left: 30%; /* Center the form horizontally for tablets */
     }
     .content h1 {
         font-size: 45px; /* Adjust heading size for tablets */
