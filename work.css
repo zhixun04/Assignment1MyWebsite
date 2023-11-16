@@ -67,129 +67,125 @@
 
 }
 
-.works{
+.works {
     text-align: center;
-    color:#009688;
+    color: #009688;
+    margin-top: 10px;
+}
+
+.works h3 {
+    font-size: 24px;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.work-container div {
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    width: 12%;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work-container div img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-container div:hover img {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+        font-size: 9px;
+        width: 100%; 
+    }
+
+    .logo {
+        width: 80px; /* Adjust logo size for mobile */
+    }
+
+
+    .works h3 {
+        font-size: 20px; /* Adjust heading size for mobile */
+    }
+
+    .work-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
     
+    .work-container div {
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+        width: 20%;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .work-container div img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .work-container div:hover img {
+        transform: scale(1.05);
+    }
 }
 
-.workpic1{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 250px;
-    left: 40px;
-    width: 20px;
-    height: 50vh;
-}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+        font-size: 10px;
+    }
 
-.workpic2{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 250px;
-    left: 280px;
-    width: 20px;
-    height: 50vh;
-}
+    .logo {
+        width: 80px;
+    }
+    
+    .works h3 {
+        font-size: 20px; /* Adjust heading size for mobile */
+    }
 
-.workpic3{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 250px;
-    left: 520px;
-    width: 20px;
-    height: auto;
+    .work-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .work-container div {
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+        width: 15%;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .work-container div img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .work-container div:hover img {
+        transform: scale(1.05);
+    }
 }
-
-.workpic4{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 250px;
-    left: 760px;
-    width: 20px;
-    height: auto;
-}
-
-.workpic5{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 250px;
-    left: 1000px;
-    width: 20px;
-    height: auto;
-}
-
-.workpic6{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 250px;
-    left: 1240px;
-    width: 20px;
-    height: auto;
-}
-
-.workpic7{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 480px;
-    left: 40px;
-    width: 20px;
-    height: auto;
-}
-
-.workpic8{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 480px;
-    left: 280px;
-    width: 20px;
-    height: auto;
-}
-
-.workpic9{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 480px;
-    left: 520px;
-    width: 20px;
-    height: auto;
-}
-
-.workpic10{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 480px;
-    left: 520px;
-    width: 20px;
-    height: auto;
-}
-
-.workpic11{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 480px;
-    left: 760px;
-    width: 20px;
-    height: auto;
-}
-
-.workpic12{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 480px;
-    left: 1000px;
-    width: 20px;
-    height: auto;
-}
-
-.workpic13{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 480px;
-    left: 1240px;
-    width: 20px;
-    height: auto;
-}
-
 
 
 
