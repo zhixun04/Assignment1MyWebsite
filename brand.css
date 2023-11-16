@@ -91,3 +91,47 @@
     justify-content: center;
     align-items: center;
 }
+
+
+@media screen and (max-width: 480px) {
+    .branding p {
+        font-size: 12px;
+        padding: 20px;
+        width: 90%;
+    }
+    .brand h2 {
+        font-size: 25px;
+    }
+    .navbar {
+        padding: 10px;
+        font-size: 9px;
+        width: 100%;
+    }
+
+    .branddesign{
+        width: 30%;
+        left: 60%;
+        top: 25%;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .branding p {
+        font-size: 15px;
+        padding: 20px;
+        width: 100%;
+    }
+    .brand h2 {
+        font-size: 35px;
+    }
+    .navbar {
+        padding: 15px;
+    }
+
+    .branddesign{
+        width: 30%;
+        left: 60%;
+        top: 18%;
+    }
+}
