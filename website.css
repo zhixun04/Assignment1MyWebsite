@@ -123,3 +123,34 @@ button:hover
 {
     border: none;
 }
+
+@media screen and (max-width: 480px) {
+    .content {
+        font-size: 14px;
+        padding: 5px;
+        width: 100%;
+    }
+    .details h1 {
+        font-size: 30px; /* Adjust heading size for mobile */
+    }
+    .navbar {
+        padding: 10px; /* Adjust navbar padding for mobile */
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Styles specific to tablet-sized screens go here */
+    .content {
+        font-size: 16px; /* Adjust font size for tablets */
+        padding: 10px; /* Adjust padding for tablets */
+    }
+
+    .details h1 {
+        font-size: 45px; /* Adjust heading size for tablets */
+    }
+    .navbar {
+        padding: 20px; /* Adjust navbar padding for tablets */
+    }
+}
