@@ -16,6 +16,7 @@
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
+    
 }
 
 .navbar
@@ -154,11 +155,21 @@
     text-shadow: 10px;
 }
 
+.founder h4 {
+    font-family:'Segoe UI';
+    font-size: 20px;
+    margin-left: 700px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    color:#009688;
+    text-shadow: 10px;
+}
+
 .founder p {
     font-family:'Segoe UI';
     font-size: 15px;
     margin-left: 700px;
-    margin-top: 40px;
+    margin-top: -30px;
     letter-spacing: 1.5px;
     color:aliceblue;
     text-shadow: 10px;
@@ -171,3 +182,105 @@
     width: 200px;
     height: auto;
 }
+
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px; 
+        font-size: 9px;
+        width: 100%;
+    }
+    .stu h4, .p1, .awards h4, .p2, .projects h4, .p3 {
+        
+        font-size: 16px; 
+        padding-left: 10px; 
+        color:#009688; 
+        
+    }
+    .testament p {
+        
+        font-size: 10px;
+        margin-left: 120px; 
+        margin-top:-180px;
+        color: #fff; 
+        
+    }
+    .founder h4{
+        color:#009688;
+        margin-left: 120px; 
+        margin-top: 20px;
+    }
+    .founder h3{
+        color:#009688;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+    .founder p{
+        font-size: 10px; 
+        margin-left: 120px; 
+        margin-top: 5px;
+        color: #fff;
+    }
+    .founder img {
+        width: 20%;
+        left: 40%;
+        top: 15%;
+    }
+
+}
+
+
+/* Tablet Media Query */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 20px; /* Adjusted navbar padding for tablets */
+        font-size: 12px; /* Adjusted font size for tablets */
+        width: 100%; /* Adjusted width to occupy full width */
+    }
+
+    .stu h4,
+    .p1,
+    .awards h4,
+    .p2,
+    .projects h4,
+    .p3 {
+        font-size: 18px; /* Increased font size for better readability on tablets */
+        padding-left: 15px; /* Adjusted padding for text elements */
+        color: #009688; /* Adjusted text color if needed */
+        /* Add other necessary styles */
+    }
+
+    .testament p {
+        font-size: 12px; /* Increased font size for better readability on tablets */
+        margin-left: 150px; /* Adjusted margin for better layout */
+        margin-top: -300px; /* Adjusted top margin */
+        color: #fff; /* Adjusted text color if needed */
+        /* Add other necessary styles */
+    }
+
+    .founder h4,
+    .founder h3 {
+        color: #009688; /* Adjusted text color if needed */
+        margin-left: 150px; /* Adjusted margin for better layout */
+        margin-top: 20px; /* Adjusted top margin */
+        /* Add other necessary styles */
+    }
+
+    .founder p {
+        font-size: 12px; /* Increased font size for better readability on tablets */
+        margin-left: 150px; /* Adjusted margin for better layout */
+        margin-top: 5px; /* Adjusted top margin */
+        color: #fff; /* Adjusted text color if needed */
+        /* Add other necessary styles */
+    }
+
+    .founder img {
+        width: 20%; /* Adjusted image width */
+        left: 70%; /* Adjusted image position */
+        top: 50%; /* Adjusted image position */
+        /* Add other necessary styles */
+    }
+}
+
+
+
