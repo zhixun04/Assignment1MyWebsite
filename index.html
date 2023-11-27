@@ -2,30 +2,9 @@
 <html>
 <head>
     <title> Interior Design</title>
-    <link rel="stylesheet" href="loginpage.css">
+    <link rel = "stylesheet" href = "HeaderFooter.css">
+    <link rel="stylesheet" href= "MainContent.css">
     <link rel="icon" href="image/images (1).jpeg">
-    <script>
-        // JavaScript for form validation
-        function validateForm() { 
-            var email = document.forms["loginForm"]["Email"].value;
-            var password = document.forms["loginForm"]["Password"].value;
-
-            if (email === "" && password === "") {
-                alert("Please enter both email and password.");
-                
-                return false;
-            } else if (email === "") {
-                alert("Please enter your email.");
-                
-                return false;
-            } else if (password === "") {
-                alert("Please enter your password.");
-        
-                return false;
-            }    
-            return false;
-        }
-    </script>
 </head>
 <body>
     <div class="banner">
@@ -49,7 +28,8 @@
         <div class="form">
             <form name="loginForm" onsubmit=" return validateForm();">
                 <h2>Login Here</h2>
-                <input type="email" id = "email" name="Email" placeholder="Enter your email" >
+                <input type="email" id = "email" onkeyup = "checkUsernameLength()" name="Email" placeholder="Enter your email" >
+                <p id = "usernameFeedback"></p>
                 <input type="password" id = "password" name="Password" placeholder="Enter your password" >
                 <button type="submit" class="button" onclick="func()">Login</button>
                 <p class="link">Don't have an account<br>
@@ -66,21 +46,7 @@
             </form>
         </div>
     </div>
-    <script>
-        function func(){
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-            if (email == 'peyzhixun@gmail.com' && password == '12345')
-            {
-                alert("Success")
-                window.location.assign("Home.html")
-            }
-           else
-           {
-                alert("Wrong entry")
-           }
-        }
-    </script>
+    <script src = "Loginpage.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
