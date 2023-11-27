@@ -1,0 +1,743 @@
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .para{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 1%;
+    letter-spacing: 2px;
+}
+
+.content .con{
+    width: 160px;
+    height: 40px;
+    background-color: #009688;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.content .con a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s 
+}
+
+.con:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color:#009688;
+    font-size: 60px;
+}
+
+.form{
+    width: 300px;
+    height: 440px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 200px;
+    left: 1100px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+#usernameFeedback {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color:#009688;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.form h2{
+    width: 220px;
+    position: relative;
+    font-family:sans-serif;
+    color:#009688;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 8px;  
+    right: -10px;
+    text-align: center;
+    
+    
+}
+
+.form input{
+    width: 220px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #009688;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color:#fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+
+.button{
+    width: 220px;
+    height: 40px;
+    background:#009688;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.button:hover{
+    background: #fff;
+    color:#009688;
+}
+
+.button a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a{
+    text-decoration:none;
+    color:#009688;
+}
+
+.loginwith{
+    padding-top:15px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.icon a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.icon ion-icon{
+    color:white;
+    font-size: 25px;
+    padding-left: 14px;
+    padding-top: 5px; 
+    transition: 0.3s ease;
+}
+
+.icon ion-icon:hover{
+    color:#009688;
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        font-size: 9px;
+        padding: 5px;
+        width: 100%;
+    }
+    .form {
+        width: 65%; /* Adjust for full-width mobile form */
+        left: 20%; /* Reset position for mobile */
+    }
+    .content h1 {
+        font-size: 35px; /* Adjust heading size for mobile */
+    }
+    .navbar {
+        padding: 10px; /* Adjust navbar padding for mobile */
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Styles specific to tablet-sized screens go here */
+    .content {
+        font-size: 16px; /* Adjust font size for tablets */
+        padding: 10px; /* Adjust padding for tablets */
+    }
+    .form {
+        width: 50%; /* Adjust form width for tablets */
+        left: 30%; /* Center the form horizontally for tablets */
+    }
+    .content h1 {
+        font-size: 45px; /* Adjust heading size for tablets */
+    }
+    .navbar {
+        padding: 20px; /* Adjust navbar padding for tablets */
+    }
+}
+
+
+/*-------------------------------------------------------*/
+/* Styling for Home Page */
+/*-------------------------------------------------------*/
+
+.Homepage-details
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.Homepage-details h1
+{
+    font-size: 35px;
+    margin-top: 160px;
+    padding: 10px;
+}
+
+.Homepage-details .p
+{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.Homepage-button
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.Homepage-button span
+{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.Homepage-button:hover span
+{
+    width: 100%;
+}
+
+.Homepage-button:hover
+{
+    border: none;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .Homepage-content {
+        font-size: 14px;
+        padding: 5px;
+        width: 100%;
+    }
+    .Homepage-details h1 {
+        font-size: 30px; /* Adjust heading size for mobile */
+    }
+    .Homepage-navbar {
+        padding: 10px; /* Adjust navbar padding for mobile */
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Styles specific to tablet-sized screens go here */
+    .Homepage-content {
+        font-size: 16px; /* Adjust font size for tablets */
+        padding: 10px; /* Adjust padding for tablets */
+    }
+
+    .Homepage-details h1 {
+        font-size: 45px; /* Adjust heading size for tablets */
+    }
+    .Homepage-navbar {
+        padding: 20px; /* Adjust navbar padding for tablets */
+    }
+}
+/* --------------------------------------*/
+/* Work Page Styling */
+/*---------------------------------------*/
+
+.works {
+    text-align: center;
+    color: #009688;
+    margin-bottom: 0%;
+}
+
+.works h3 {
+    font-size: 24px;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.work-container div {
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    width: 12%;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.work-container div img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.work-container div:hover img {
+    transform: scale(1.05);
+    
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+        font-size: 9px;
+        width: 100%; 
+    }
+
+    .logo {
+        width: 80px; /* Adjust logo size for mobile */
+    }
+
+
+    .works h3 {
+        font-size: 20px; /* Adjust heading size for mobile */
+    }
+
+    .work-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        
+    }
+    
+    .work-container div {
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+        width: 20%;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .work-container div img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    
+    .work-container div:hover img {
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+    
+    .works h3 {
+        font-size: 20px; /* Adjust heading size for mobile */
+    }
+
+    .work-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .work-container div {
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+        width: 15%;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .work-container div img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .work-container div:hover img {
+        transform: scale(1.05);
+    }
+}
+
+/* -------------------------------------*/
+/* Brand Page Styling */
+/* -------------------------------------*/
+
+.brand
+{
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 60%;
+    padding: 30px;
+    color: white; /* Sets the text color to white */
+}
+
+.branddesign
+{
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 250px;
+    left: 900px;
+    width: 500px;
+    height: auto;
+    transition: transform 0.3s ease-in-out
+}
+.branddesign:hover{
+    transform: scale(1.05);
+}
+
+.branding
+{
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    .branding p {
+        font-size: 12px;
+        padding: 20px;
+        width: 90%;
+    }
+    .brand h2 {
+        font-size: 25px;
+    }
+    .navbar {
+        padding: 10px;
+        font-size: 9px;
+        width: 100%;
+    }
+
+    .branddesign{
+        width: 30%;
+        left: 60%;
+        top: 25%;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .branding p {
+        font-size: 15px;
+        padding: 20px;
+        width: 100%;
+    }
+    .brand h2 {
+        font-size: 35px;
+    }
+    .navbar {
+        padding: 15px;
+    }
+
+    .branddesign{
+        width: 30%;
+        left: 60%;
+        top: 18%;
+    }
+}
+/* --------------------------------------*/
+/* Studio Page Styling */
+/* --------------------------------------*/
+.stu h3{
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    padding-left: 40px;
+    letter-spacing: 2px;
+    color:#fff;
+}
+
+.stu h4{
+    font-family:'Segoe UI';
+    font-size: 20px;
+    padding-left: 40px;
+    margin-top: 1%;
+    letter-spacing: 2px;
+    color:#009688;
+    text-shadow: 10px;
+}
+
+.p1{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding-left: 40px;
+    margin-top: 0%;
+    letter-spacing: 2px;
+    color:#fff;
+}
+
+.awards h4{
+    font-family:'Segoe UI';
+    font-size: 20px;
+    padding-left: 40px;
+    margin-top: 1%;
+    letter-spacing: 2px;
+    color:#009688;
+    text-shadow: 10px;
+}
+
+.p2{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding-left: 40px;
+    margin-top: 0%;
+    letter-spacing: 1.5px;
+    color:#fff;
+}
+
+.projects h4{
+    font-family:'Segoe UI';
+    font-size: 20px;
+    padding-left: 40px;
+    margin-top: 1%;
+    letter-spacing: 1.5px;
+    color:#009688;
+    text-shadow: 10px;
+}
+
+.p3{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding-left: 40px;
+    margin-top: 0%;
+    letter-spacing: 2px;
+    color:#fff; 
+}
+
+
+.testament p {
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    margin-left: 240px;
+    margin-top: -270px;
+    letter-spacing: 1.5;
+    color:aliceblue;
+    text-shadow: 10px;
+    
+}
+
+.founder h3 {
+    font-family:'Segoe UI';
+    font-size: 20px;
+    margin-left: 700px;
+    margin-top: -250px;
+    letter-spacing: 2px;
+    color:#009688;
+    text-shadow: 10px;
+}
+
+.founder h4 {
+    font-family:'Segoe UI';
+    font-size: 20px;
+    margin-left: 700px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    color:#009688;
+    text-shadow: 10px;
+}
+
+.founder p {
+    font-family:'Segoe UI';
+    font-size: 15px;
+    margin-left: 700px;
+    margin-top: -30px;
+    letter-spacing: 1.5px;
+    color:aliceblue;
+    text-shadow: 10px;
+}
+
+.founder img {
+    position: absolute;
+    top: 250px;
+    left: 1240px;
+    width: 200px;
+    height: auto;
+}
+
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px; 
+        font-size: 9px;
+        width: 100%;
+    }
+    .stu h4, .p1, .awards h4, .p2, .projects h4, .p3 {
+        
+        font-size: 16px; 
+        padding-left: 10px; 
+        color:#009688; 
+        
+    }
+    .testament p {
+        
+        font-size: 10px;
+        margin-left: 120px; 
+        margin-top:-180px;
+        color: #fff; 
+        
+    }
+    .founder h4{
+        color:#009688;
+        margin-left: 120px; 
+        margin-top: 20px;
+    }
+    .founder h3{
+        color:#009688;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+    .founder p{
+        font-size: 10px; 
+        margin-left: 120px; 
+        margin-top: 5px;
+        color: #fff;
+    }
+    .founder img {
+        width: 20%;
+        left: 40%;
+        top: 15%;
+    }
+
+}
+
+
+/* Tablet Media Query */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 20px; /* Adjusted navbar padding for tablets */
+        font-size: 12px; /* Adjusted font size for tablets */
+        width: 100%; /* Adjusted width to occupy full width */
+    }
+
+    .stu h4,
+    .p1,
+    .awards h4,
+    .p2,
+    .projects h4,
+    .p3 {
+        font-size: 18px; /* Increased font size for better readability on tablets */
+        padding-left: 15px; /* Adjusted padding for text elements */
+        color: #009688; /* Adjusted text color if needed */
+        /* Add other necessary styles */
+    }
+
+    .testament p {
+        font-size: 12px; /* Increased font size for better readability on tablets */
+        margin-left: 150px; /* Adjusted margin for better layout */
+        margin-top: -300px; /* Adjusted top margin */
+        color: #fff; /* Adjusted text color if needed */
+        /* Add other necessary styles */
+    }
+
+    .founder h4,
+    .founder h3 {
+        color: #009688; /* Adjusted text color if needed */
+        margin-left: 150px; /* Adjusted margin for better layout */
+        margin-top: 20px; /* Adjusted top margin */
+        /* Add other necessary styles */
+    }
+
+    .founder p {
+        font-size: 12px; /* Increased font size for better readability on tablets */
+        margin-left: 150px; /* Adjusted margin for better layout */
+        margin-top: 5px; /* Adjusted top margin */
+        color: #fff; /* Adjusted text color if needed */
+        /* Add other necessary styles */
+    }
+
+    .founder img {
+        width: 20%; /* Adjusted image width */
+        left: 70%; /* Adjusted image position */
+        top: 50%; /* Adjusted image position */
+        /* Add other necessary styles */
+    }
+}
