@@ -30,7 +30,8 @@
                 <h2>Login Here</h2>
                 <input type="email" id = "email" onkeyup = "checkUsernameLength()" name="Email" placeholder="Enter your email" >
                 <p id = "usernameFeedback"></p>
-                <input type="password" id = "password" name="Password" placeholder="Enter your password" >
+                <input type="password" id = "password" onkeyup = "validateForm()" name="Password" placeholder="Enter your password" >
+                <p id="passwordFeedback"></p>
                 <button type="submit" class="button" onclick="func()">Login</button>
                 <p class="link">Don't have an account<br>
                     <a href="#">Sign up Here</a>
