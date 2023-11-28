@@ -52,7 +52,7 @@
 
 .form{
     width: 300px;
-    height: 440px;
+    height: 460px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
     top: 200px;
@@ -79,6 +79,21 @@ input[type="password"] {
     text-align: left;
     margin-left: 15px;
 }
+
+input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#passwordFeedback {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #009688;
+    text-align: left;
+    margin-left: 15px;
+}
+
 
 .form h2{
     width: 220px;
@@ -296,15 +311,62 @@ input[type="password"] {
         padding: 5px;
         width: 100%;
     }
+
     .Homepage-details h1 {
         font-size: 30px; /* Adjust heading size for mobile */
     }
+
     .Homepage-navbar {
         padding: 10px; /* Adjust navbar padding for mobile */
         font-size: 10px;
         width: 100%;
     }
+
+    .footer {
+        flex-direction: column; /* Stack footer content vertically */
+        align-items: center; /* Center content */
+        height: 700px;
+    }
+
+    #signup {
+        width: 80%; /* Adjust width */
+        margin-bottom: 20px; /* Add some space */
+    }
+
+    .footer-para {
+        text-align: center; /* Center text */
+        font-size: 15px; /* Adjust font size */
+        margin: 20px 0; /* Add space */
+        margin-top: 120px;
+    }
+
+    .footer-links {
+        text-align: center; /* Center links */
+    }
+
+    .footer-links ul {
+        padding: 0;
+        margin: 0;
+        margin-left: 120px;
+    }
+
+    .footer-links ul li {
+        margin: 10px 0; /* Add space between links */
+        margin-right: 150px;
+    }
+    .footer-links h4{
+        text-align: center;
+        margin-right: 150px;
+    }
+
+    .copyright {
+        text-align: center; /* Center text */
+        font-size: 14px; /* Adjust font size */
+        margin: 10px 0; /* Add space */
+        margin-top: 200px;
+    }
 }
+
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     /* Styles specific to tablet-sized screens go here */
@@ -501,16 +563,17 @@ input[type="password"] {
     .branddesign{
         width: 30%;
         left: 60%;
-        top: 25%;
+        top: 18%;
     }
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 769px) {
     .branding p {
         font-size: 15px;
         padding: 20px;
         width: 100%;
+        margin-top: 50px;
     }
     .brand h2 {
         font-size: 35px;
@@ -522,7 +585,7 @@ input[type="password"] {
     .branddesign{
         width: 30%;
         left: 60%;
-        top: 18%;
+        top: 15%;
     }
 }
 /* --------------------------------------*/
@@ -684,7 +747,7 @@ input[type="password"] {
     .founder img {
         width: 20%;
         left: 40%;
-        top: 15%;
+        top: 10%;
     }
 
 }
@@ -739,5 +802,47 @@ input[type="password"] {
         left: 70%; /* Adjusted image position */
         top: 50%; /* Adjusted image position */
         /* Add other necessary styles */
+    }
+
+    .footer {
+        flex-direction: row; /* Revert to horizontal layout */
+        justify-content: space-around; /* Space items evenly */
+        align-items: center; /* Center content vertically */
+        height: 250px; /* Adjusted height for tablet */
+    }
+
+    #signup {
+        width: auto; /* Reset width for form */
+        margin-bottom: 0; /* Remove extra margin */
+    }
+
+    .footer-para {
+        text-align: center; /* Center text */
+        font-size: 12px; /* Adjust font size */
+        margin: 0; /* Reset margin */
+        margin-top: 75px;
+    }
+
+    .footer-links {
+        text-align: center; /* Center links */
+    }
+
+    .footer-links ul {
+        padding: 0;
+        margin: 0px;
+        display: flex; /* Display links in a row */
+        justify-content: center; /* Center links horizontally */
+    }
+
+    .footer-links ul li {
+        margin: 10 0px; /* Add space between links */
+    }
+
+    .copyright {
+        text-align: center; /* Center text */
+        font-size: 12px; /* Adjust font size */
+        margin: 10px 0; /* Add space */
+        margin-top: 0px;
+        margin-left: 180px;
     }
 }
