@@ -1,25 +1,25 @@
-*
-{
-    margin :0;
-    padding :0;
+/* Resetting default margins, padding, font-family, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
-
 }
 
-.banner
-{
+/* Banner styles */
+.banner {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('image/Living.jpg');
+    /* Background image and properties */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('image/Living.jpg');
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
 }
 
-.navbar
-{
+/* Navbar styles */
+.navbar {
     width: 85%;
     margin: auto;
     padding: 35px 0;
@@ -28,29 +28,30 @@
     justify-content: space-between;
 }
 
-.logo
-{
+/* Logo styles */
+.logo {
     width: 120px;
     cursor: pointer;
 }
 
-.navbar ul li
-{
+/* Navigation list styles */
+.navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
 
-.navbar ul li a
-{
+/* Navigation link styles */
+.navbar ul li a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
 }
 
-.navbar ul li::after
-{
+/* Styling for hover effect on navigation links */
+.navbar ul li::after {
+    /* Adds an underline effect */
     content: '';
     height: 3px;
     width: 0;
@@ -61,15 +62,13 @@
     transition: 0.5s;
 }
 
-.navbar ul li:hover::after
-{
+/* Hover styling */
+.navbar ul li:hover::after {
     width: 100%;
-
 }
 
-/* Footer CSS */
-.footer
-{
+/* Footer styles */
+.footer {
     background-color: darkslategrey; 
     width: 100%;
     position: absolute;
@@ -79,13 +78,13 @@
     top: 700px;
     color: black;
     height: 200px;
-    display: flex; /* Use flexbox for layout */
-    flex-direction: row; /* Display content in a row */
-    justify-content: space-between; /* Distribute content */
-    align-items: flex-start; /* Align content to the top */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-/* Styling for the newsletter signup form */
 
+/* Styling for the newsletter signup form */
 #signup {
     background: #00bfff;
     padding: 20px;
@@ -95,10 +94,12 @@
     margin-bottom: 5px;
 }
 
+/* Styling for the title of the signup form */
 #signup h2 {
     margin-bottom: 0px;
 }
 
+/* Styling for the email input field */
 #signup input[type="email"] {
     width: 100%;
     padding: 10px;
@@ -107,6 +108,7 @@
     border-radius: 4px;
 }
 
+/* Styling for the submit button */
 #signup input[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -119,33 +121,39 @@
     border-radius: 10px;
 }
 
+/* Styling for the submit button on hover */
 #signup input[type="submit"]:hover {
     background-color: white;
 }
 
-.copyright{
+/* Copyright information styles */
+.copyright {
     position: absolute;
     text-align: left;
     margin-left: 400px;
     top: 50px;
 }
 
-.footer-para 
-{
+/* Paragraph in the footer */
+.footer-para {
     margin-left: 400px;
     margin-top: 30px;
 }
 
+/* Styling for the unordered list in the footer links */
 .footer-links ul {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
-    
 }
-.footer-links h4{
-    margin-right: 50px
+
+/* Styling for the heading in footer links */
+.footer-links h4 {
+    margin-right: 50px;
 }
+
+/* Additional styling for the unordered list in footer links */
 .footer-links ul {
     text-decoration: none;
     flex-direction: column;
@@ -155,16 +163,17 @@
     text-align: right;
 }
 
+/* Styling for each list item in footer links */
 .footer-links ul li {
-
     list-style: none;
     text-decoration: none;
-    margin-bottom: 1px; /* Space between each list item */
+    margin-bottom: 1px;
     margin-right: 50px;
     margin-top: 10px;
 }
 
+/* Styling for the links in footer links */
 .footer-links ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color:#009688; /* Set the link color */
+    text-decoration: none;
+    color: #009688;
 }
