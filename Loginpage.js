@@ -72,9 +72,11 @@ function validateForm() {
             passwordFeedback.textContent = "Password must contain at least one letter.";
             return false;
         }
+        else{
         // Clear the feedback when password is valid
         passwordFeedback.textContent = "Password is strong.";
         return false;
+        }
     }
 }
 
