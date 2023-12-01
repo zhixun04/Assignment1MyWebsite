@@ -1,3 +1,6 @@
+
+/* Login Page Styling */
+/* Content Styles */
 .content{
     width: 1200px;
     height: auto;
@@ -6,12 +9,14 @@
     position: relative;
 }
 
+/* Paragraph for content styles */
 .content .para{
     padding-left: 20px;
     padding-bottom: 25px;
     font-family: Arial;
     letter-spacing: 1.2px;
     line-height: 30px;
+    width: 60%;
 }
 
 .content h1{
@@ -52,10 +57,10 @@
 
 .form{
     width: 300px;
-    height: 460px;
+    height: 500px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 1100px;
     color: #fff;
     border-radius: 10px;
@@ -111,7 +116,8 @@ input[type="password"] {
     
 }
 
-.form input{
+/* Styles for input fields within the form */
+.form input {
     width: 220px;
     height: 35px;
     background: transparent;
@@ -119,26 +125,29 @@ input[type="password"] {
     border-top: none;
     border-right: none;
     border-left: none;
-    color:#fff;
+    color: #fff;
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: 30px;
     font-family: sans-serif;
 }
 
-.form input:focus{
+/* Focus styles for input fields */
+.form input:focus {
     outline: none;
 }
 
-::placeholder{
+/* Placeholder text style */
+::placeholder {
     color: white;
     font-family: Arial;
 }
 
-.button{
+/* Styles for the login button */
+.button {
     width: 220px;
     height: 40px;
-    background:#009688;
+    background: #009688;
     border: none;
     margin-top: 30px;
     font-size: 18px;
@@ -148,53 +157,53 @@ input[type="password"] {
     transition: 0.4s ease;
 }
 
-.button:hover{
+/* Hover effect for the login button */
+.button:hover {
     background: #fff;
-    color:#009688;
+    color: #009688;
 }
 
-.button a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-.form .link{
+/* Styles for links within the form */
+.form .link {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     padding-top: 20px;
     text-align: center;
 }
 
-.form .link a{
-    text-decoration:none;
-    color:#009688;
+/* Styles for links within the form */
+.form .link a {
+    text-decoration: none;
+    color: #009688;
 }
 
-.loginwith{
-    padding-top:15px;
+/* Styling for the 'loginwith' class */
+.loginwith {
+    padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
-
 }
 
-.icon a{
+/* Icon link styles */
+.icon a {
     text-decoration: none;
     color: #fff;
-
 }
 
-.icon ion-icon{
-    color:white;
+/* Icon styles for ion-icons */
+.icon ion-icon {
+    color: white;
     font-size: 25px;
     padding-left: 14px;
-    padding-top: 5px; 
+    padding-top: 5px;
     transition: 0.3s ease;
 }
 
-.icon ion-icon:hover{
-    color:#009688;
+/* Hover effect for ion-icons */
+.icon ion-icon:hover {
+    color: #009688;
 }
+
 
 @media screen and (max-width: 480px) {
     .content {
@@ -239,8 +248,8 @@ input[type="password"] {
 /* Styling for Home Page */
 /*-------------------------------------------------------*/
 
-.Homepage-details
-{
+/* Styling for the container holding home page details */
+.Homepage-details {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -249,23 +258,23 @@ input[type="password"] {
     color: #fff;
 }
 
-.Homepage-details h1
-{
+/* Styling for the main heading in the home page */
+.Homepage-details h1 {
     font-size: 35px;
     margin-top: 160px;
     padding: 10px;
 }
 
-.Homepage-details .p
-{
+/* Styling for the paragraphs in the home page details */
+.Homepage-details .p {
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
     font-size: 15px;
 }
 
-.Homepage-button
-{
+/* Styling for the home page button */
+.Homepage-button {
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -280,8 +289,8 @@ input[type="password"] {
     overflow: hidden;
 }
 
-.Homepage-button span
-{
+/* Styling for the button hover effect */
+.Homepage-button span {
     background: #009688;
     height: 100%;
     width: 0;
@@ -293,17 +302,19 @@ input[type="password"] {
     transition: 0.5s;
 }
 
-.Homepage-button:hover span
-{
+/* Increasing button width on hover */
+.Homepage-button:hover span {
     width: 100%;
 }
 
-.Homepage-button:hover
-{
+/* Removing border on button hover */
+.Homepage-button:hover {
     border: none;
 }
 
 
+
+/* @media for home page ( phone size ) */
 
 @media screen and (max-width: 480px) {
     .Homepage-content {
@@ -367,6 +378,7 @@ input[type="password"] {
     }
 }
 
+/* @media for home page ( tablet size ) . */
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     /* Styles specific to tablet-sized screens go here */
@@ -382,20 +394,25 @@ input[type="password"] {
         padding: 20px; /* Adjust navbar padding for tablets */
     }
 }
-/* --------------------------------------*/
-/* Work Page Styling */
-/*---------------------------------------*/
 
+
+/* -------------------------------------- */
+/* Work Page Styling */
+/* -------------------------------------- */
+
+/* Styling for the section containing work-related content */
 .works {
     text-align: center;
     color: #009688;
     margin-bottom: 0%;
 }
 
+/* Styling for the heading in the work section */
 .works h3 {
     font-size: 24px;
 }
 
+/* Styling for the container holding work items */
 .work-container {
     display: flex;
     flex-wrap: wrap;
@@ -404,8 +421,9 @@ input[type="password"] {
     margin-top: 20px;
 }
 
+/* Styling for individual work items in the container */
 .work-container div {
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
     width: 12%;
     margin: 10px;
     position: relative;
@@ -413,6 +431,7 @@ input[type="password"] {
     border-radius: 10px;
 }
 
+/* Styling for images within the work items */
 .work-container div img {
     width: 100%;
     height: auto;
@@ -420,284 +439,340 @@ input[type="password"] {
     border-radius: 10px;
 }
 
+/* Hover effect on images within work items */
 .work-container div:hover img {
     transform: scale(1.05);
-    
 }
 
+
+/* Adjustments for screens up to 480 pixels wide */
 @media screen and (max-width: 480px) {
+    /* Navbar adjustments for smaller screens */
     .navbar {
-        padding: 10px;
-        font-size: 9px;
-        width: 100%; 
+        padding: 10px; /* Decreases padding */
+        font-size: 9px; /* Reduces font size */
+        width: 100%; /* Sets width to fill the viewport */
     }
 
+    /* Logo adjustments for smaller screens */
     .logo {
-        width: 80px; /* Adjust logo size for mobile */
+        width: 80px; /* Adjusts logo size for mobile */
     }
 
-
+    /* Heading adjustments for smaller screens */
     .works h3 {
-        font-size: 20px; /* Adjust heading size for mobile */
+        font-size: 20px; /* Adjusts heading size for mobile */
     }
 
+    /* Work container adjustments for smaller screens */
     .work-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        
+        display: flex; /* Uses flexbox for layout */
+        flex-wrap: wrap; /* Allows items to wrap */
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        margin-top: 20px; /* Adds top margin */
     }
-    
+
+    /* Work container div adjustments for smaller screens */
     .work-container div {
         background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-        width: 20%;
-        margin: 10px;
-        position: relative;
-        overflow: hidden;
+        width: 20%; /* Sets width of work items */
+        margin: 10px; /* Adds margin around work items */
+        position: relative; /* Sets positioning */
+        overflow: hidden; /* Hides overflowing content */
     }
-    
+
+    /* Work container div image adjustments for smaller screens */
     .work-container div img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s ease-in-out;
-        
+        width: 100%; /* Makes images fill their container */
+        height: auto; /* Preserves image aspect ratio */
+        transition: transform 0.3s ease-in-out; /* Adds image transition */
     }
-    
+
+    /* Work container div image hover adjustments for smaller screens */
     .work-container div:hover img {
-        transform: scale(1.05);
+        transform: scale(1.05); /* Scales images on hover */
     }
 }
 
+/* Adjustments for screens between 481px and 768px wide */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Navbar adjustments for mid-sized screens */
     .navbar {
-        padding: 15px;
-        font-size: 10px;
+        padding: 15px; /* Increases padding */
+        font-size: 10px; /* Adjusts font size */
     }
 
+    /* Logo adjustments for mid-sized screens */
     .logo {
-        width: 80px;
+        width: 80px; /* Sets logo width */
     }
     
+    /* Heading adjustments for mid-sized screens */
     .works h3 {
-        font-size: 20px; /* Adjust heading size for mobile */
+        font-size: 20px; /* Adjusts heading size for mid-sized screens */
     }
 
+    /* Work container adjustments for mid-sized screens */
     .work-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
+        display: flex; /* Uses flexbox for layout */
+        flex-wrap: wrap; /* Allows items to wrap */
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        margin-top: 20px; /* Adds top margin */
     }
-    
+
+    /* Work container div adjustments for mid-sized screens */
     .work-container div {
         background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-        width: 15%;
-        margin: 10px;
-        position: relative;
-        overflow: hidden;
+        width: 15%; /* Sets width of work items */
+        margin: 10px; /* Adds margin around work items */
+        position: relative; /* Sets positioning */
+        overflow: hidden; /* Hides overflowing content */
     }
-    
+
+    /* Work container div image adjustments for mid-sized screens */
     .work-container div img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s ease-in-out;
+        width: 100%; /* Makes images fill their container */
+        height: auto; /* Preserves image aspect ratio */
+        transition: transform 0.3s ease-in-out; /* Adds image transition */
     }
-    
+
+    /* Work container div image hover adjustments for mid-sized screens */
     .work-container div:hover img {
-        transform: scale(1.05);
+        transform: scale(1.05); /* Scales images on hover */
     }
 }
 
-/* -------------------------------------*/
+
+/* ------------------------------------- */
 /* Brand Page Styling */
-/* -------------------------------------*/
+/* ------------------------------------- */
 
-.brand
-{
-
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 60%;
+/* Styles for the branding section */
+.branding {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 30px;
     color: white; /* Sets the text color to white */
+    margin-top: 100px;
+    width: 70%;
+    margin-left: 10px;
 }
 
-.branddesign
-{
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 250px;
-    left: 900px;
-    width: 500px;
-    height: auto;
-    transition: transform 0.3s ease-in-out
+/* Styles for the brand design */
+.branddesign {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: -300px;
+    margin-left: 500px;
 }
-.branddesign:hover{
+
+/* Styles for images within brand design */
+.branddesign img {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for brand design */
+.branddesign:hover {
     transform: scale(1.05);
 }
 
-.branding
-{
-    justify-content: center;
-    align-items: center;
+/* Additional styles for branding */
+.branding {
+    justify-content: center; /* Align content horizontally to center */
+    align-items: left; /* Align content vertically to the left */
 }
 
 
+
+/* Adjustments for screens up to 480 pixels wide */
 @media screen and (max-width: 480px) {
+    /* Adjustments for text paragraphs within branding */
     .branding p {
-        font-size: 12px;
-        padding: 20px;
-        width: 90%;
+        font-size: 12px; /* Reduces font size */
+        padding: 10px; /* Adds padding */
+        width: 90%; /* Sets width to 90% of the container */
+        margin-top: 20px; /* Adds top margin */
     }
-    .brand h2 {
-        font-size: 25px;
+
+    /* Adjustments for heading 2 within branding */
+    .branding h2 {
+        font-size: 25px; /* Sets font size */
+        margin-top: -100px; /* Moves the element upward by 100 pixels */
     }
+
+    /* Adjustments for the navbar */
     .navbar {
-        padding: 10px;
-        font-size: 9px;
-        width: 100%;
+        padding: 10px; /* Decreases padding */
+        font-size: 9px; /* Reduces font size */
+        width: 100%; /* Sets width to fill the viewport */
     }
 
-    .branddesign{
-        width: 30%;
-        left: 60%;
-        top: 18%;
+    /* Adjustments for the branddesign element */
+    .branddesign {
+        width: 60%; /* Sets width to 60% */
+        right: 110%; /* Moves the element to the right by 110% of its container */
+        top: 70%; /* Positions the element 70% from the top */
     }
-
 }
 
-@media screen and (min-width: 769px) {
+/* Adjustments for screens wider than 769 pixels */
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+    /* Adjustments for text paragraphs within branding */
     .branding p {
-        font-size: 15px;
-        padding: 20px;
-        width: 100%;
-        margin-top: 50px;
-    }
-    .brand h2 {
-        font-size: 35px;
-    }
-    .navbar {
-        padding: 15px;
+        font-size: 12px; /* Increases font size */
+        padding: 20px; /* Increases padding */
+        width: 100%; /* Sets width to 100% of the container */
+        margin-top: 10px; /* Adds top margin */
+        
     }
 
-    .branddesign{
-        width: 30%;
-        left: 60%;
-        top: 15%;
+    /* Adjustments for heading 2 within branding */
+    .brand h2 {
+        font-size: 35px; /* Sets font size */
+    }
+
+    /* Adjustments for the navbar */
+    .navbar {
+        padding: 15px; /* Increases padding */
+    }
+
+    /* Adjustments for the branddesign element */
+    .branddesign {
+        width: 30%; /* Sets width to 30% */
+        left: 0%; /* Positions the element 60% from the left */
+        margin-top: -250px;
+        bottom: 50%; /* Positions the element 15% from the top */
     }
 }
-/* --------------------------------------*/
+
+
+/* -------------------------------------- */
 /* Studio Page Styling */
-/* --------------------------------------*/
-.stu h3{
+/* -------------------------------------- */
+
+/* Styles for heading 3 in studio section */
+.stu h3 {
     font-family: 'Times New Roman';
     font-size: 15px;
     padding-left: 40px;
     letter-spacing: 2px;
-    color:#fff;
+    color: #fff;
 }
 
-.stu h4{
-    font-family:'Segoe UI';
+/* Styles for heading 4 in studio section */
+.stu h4 {
+    font-family: 'Segoe UI';
     font-size: 20px;
     padding-left: 40px;
     margin-top: 1%;
     letter-spacing: 2px;
-    color:#009688;
+    color: #009688;
     text-shadow: 10px;
 }
 
-.p1{
+/* Styles for paragraph 1 in studio section */
+.p1 {
     font-family: 'Times New Roman';
     font-size: 20px;
     padding-left: 40px;
     margin-top: 0%;
     letter-spacing: 2px;
-    color:#fff;
+    color: #fff;
 }
 
-.awards h4{
-    font-family:'Segoe UI';
+/* Styles for awards heading in studio section */
+.awards h4 {
+    font-family: 'Segoe UI';
     font-size: 20px;
     padding-left: 40px;
     margin-top: 1%;
     letter-spacing: 2px;
-    color:#009688;
+    color: #009688;
     text-shadow: 10px;
 }
 
-.p2{
+/* Styles for paragraph 2 in studio section */
+.p2 {
     font-family: 'Times New Roman';
     font-size: 20px;
     padding-left: 40px;
     margin-top: 0%;
     letter-spacing: 1.5px;
-    color:#fff;
+    color: #fff;
 }
 
-.projects h4{
-    font-family:'Segoe UI';
+/* Styles for projects heading in studio section */
+.projects h4 {
+    font-family: 'Segoe UI';
     font-size: 20px;
     padding-left: 40px;
     margin-top: 1%;
     letter-spacing: 1.5px;
-    color:#009688;
+    color: #009688;
     text-shadow: 10px;
 }
 
-.p3{
+/* Styles for paragraph 3 in studio section */
+.p3 {
     font-family: 'Times New Roman';
     font-size: 20px;
     padding-left: 40px;
     margin-top: 0%;
     letter-spacing: 2px;
-    color:#fff; 
+    color: #fff; 
 }
 
-
+/* Styles for testament paragraph in studio section */
 .testament p {
     font-family: 'Segoe UI';
     font-size: 15px;
     margin-left: 240px;
     margin-top: -270px;
     letter-spacing: 1.5;
-    color:aliceblue;
+    color: aliceblue;
     text-shadow: 10px;
-    
 }
 
+/* Styles for founder heading 3 in studio section */
 .founder h3 {
-    font-family:'Segoe UI';
+    font-family: 'Segoe UI';
     font-size: 20px;
     margin-left: 700px;
     margin-top: -250px;
     letter-spacing: 2px;
-    color:#009688;
+    color: #009688;
     text-shadow: 10px;
 }
 
+/* Styles for founder heading 4 in studio section */
 .founder h4 {
-    font-family:'Segoe UI';
+    font-family: 'Segoe UI';
     font-size: 20px;
     margin-left: 700px;
     margin-top: 30px;
     letter-spacing: 2px;
-    color:#009688;
+    color: #009688;
     text-shadow: 10px;
 }
 
+/* Styles for founder paragraph in studio section */
 .founder p {
-    font-family:'Segoe UI';
+    font-family: 'Segoe UI';
     font-size: 15px;
     margin-left: 700px;
     margin-top: -30px;
     letter-spacing: 1.5px;
-    color:aliceblue;
+    color: aliceblue;
     text-shadow: 10px;
 }
 
+/* Styles for founder image in studio section */
 .founder img {
     position: absolute;
     top: 250px;
@@ -707,50 +782,65 @@ input[type="password"] {
 }
 
 
+
 @media screen and (max-width: 480px) {
+    /* Adjustments for the navbar at smaller screen sizes */
     .navbar {
-        padding: 10px; 
-        font-size: 9px;
-        width: 100%;
-    }
-    .stu h4, .p1, .awards h4, .p2, .projects h4, .p3 {
-        
-        font-size: 16px; 
-        padding-left: 10px; 
-        color:#009688; 
-        
-    }
-    .testament p {
-        
-        font-size: 10px;
-        margin-left: 120px; 
-        margin-top:-180px;
-        color: #fff; 
-        
-    }
-    .founder h4{
-        color:#009688;
-        margin-left: 120px; 
-        margin-top: 20px;
-    }
-    .founder h3{
-        color:#009688;
-        margin-left: 120px;
-        margin-top: 20px;
-    }
-    .founder p{
-        font-size: 10px; 
-        margin-left: 120px; 
-        margin-top: 5px;
-        color: #fff;
-    }
-    .founder img {
-        width: 20%;
-        left: 40%;
-        top: 10%;
+        padding: 10px; /* Decreases padding for the navbar */
+        font-size: 9px; /* Reduces font size for better fit on smaller screens */
+        width: 100%; /* Sets the width of the navbar to occupy the entire viewport */
     }
 
+    /* Adjustments for various headings and paragraphs in the studio section */
+    .stu h4,
+    .p1,
+    .awards h4,
+    .p2,
+    .projects h4,
+    .p3 {
+        font-size: 16px; /* Increases font size for these elements */
+        padding-left: 10px; /* Adds left padding for better readability */
+        color: #009688; /* Changes text color to a specific shade of green */
+    }
+
+    /* Adjustments for the testament paragraph in the studio section */
+    .testament p {
+        font-size: 10px; /* Reduces font size for better fit */
+        margin-left: 120px; /* Sets left margin for positioning */
+        margin-top: -180px; /* Adjusts top margin to reposition the element */
+        color: #fff; /* Sets text color to white */
+    }
+
+    /* Adjustments for the founder's h4 element in the studio section */
+    .founder h4 {
+        color: #009688; /* Changes text color to a specific shade of green */
+        margin-left: 120px; /* Sets left margin for positioning */
+        margin-top: 20px; /* Adjusts top margin to position the element */
+    }
+
+    /* Adjustments for the founder's h3 element in the studio section */
+    .founder h3 {
+        color: #009688; /* Changes text color to a specific shade of green */
+        margin-left: 120px; /* Sets left margin for positioning */
+        margin-top: 20px; /* Adjusts top margin to position the element */
+    }
+
+    /* Adjustments for the founder's paragraph in the studio section */
+    .founder p {
+        font-size: 10px; /* Reduces font size for better fit */
+        margin-left: 120px; /* Sets left margin for positioning */
+        margin-top: 5px; /* Adjusts top margin to position the element */
+        color: #fff; /* Sets text color to white */
+    }
+
+    /* Adjustments for the founder's image in the studio section */
+    .founder img {
+        width: 20%; /* Sets the width of the image */
+        left: 40%; /* Positions the image horizontally at 40% of the viewport */
+        top: 10%; /* Positions the image vertically at 10% of the viewport */
+    }
 }
+
 
 
 /* Tablet Media Query */
