@@ -563,9 +563,9 @@ input[type="password"] {
 .branddesign {
     position: relative;
     display: block;
-    width: 100%;
+    width: 30%;
     margin-top: -300px;
-    margin-left: 500px;
+    margin-left: 1000px;
 }
 
 /* Styles for images within brand design */
@@ -616,7 +616,7 @@ input[type="password"] {
     /* Adjustments for the branddesign element */
     .branddesign {
         width: 60%; /* Sets width to 60% */
-        right: 110%; /* Moves the element to the right by 110% of its container */
+        right: 780px; /* Moves the element to the right by 110% of its container */
         top: 70%; /* Positions the element 70% from the top */
     }
 }
@@ -644,8 +644,8 @@ input[type="password"] {
 
     /* Adjustments for the branddesign element */
     .branddesign {
-        width: 30%; /* Sets width to 30% */
-        left: 0%; /* Positions the element 60% from the left */
+        width: 40%; /* Sets width to 30% */
+        right: 90%; /* Positions the element 60% from the left */
         margin-top: -250px;
         bottom: 50%; /* Positions the element 15% from the top */
     }
